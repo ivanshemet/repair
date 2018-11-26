@@ -730,6 +730,17 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .feedback-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback-callback {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+  }
   .header-text__phone {
     font-size: 12px;
   }
