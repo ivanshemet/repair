@@ -21,7 +21,7 @@
           <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
         </div>
         <div class="header-text__button">
-          <button class="button">Перезвоните <span class="hidden-xs">мне</span></button>
+          <button class="button" id="button-callback">Перезвоните <span class="hidden-xs">мне</span></button>
         </div>
 
       </div>
@@ -87,27 +87,113 @@
           <input type="tel" pattern="\+7\s?[(]{0,1}9[0-9]{2}[)]{0,1}\s?\d{2}[-]{0,1}\d{2}[-]{0,1}\d{3}" maxlength="16"
             placeholder="Ваш телефон" class="input input-tel form__input">
           <button type="submit" class="button form__button">Получить бесплатный дизайн-проект</button>
+          <div class="feedback-wrap">
+            <div class="feedback-callback">Наш менеджер перезвонит Вам
+              в течение 60 секунд
 
+            </div>
+            <div class="feedback-item">
+              <div class="feedback-item__img"></div>
+              <div class="feedback-item__text">
+                <div class="feedback-text__call">или перезвоните нам сами</div>
+                <div class="feedback-text__phone">+7 (495) 42-251-31</div>
+              </div>
+
+            </div>
+
+
+          </div>
         </form>
 
       </div>
-      <div class="feedback-wrap">
-        <div class="feedback-callback">Наш менеджер перезвонит Вам
-          в течение 60 секунд
+    </div>
+  </section>
 
-        </div>
-        <div class="feedback-item">
-          <div class="feedback-item__img"></div>
-          <div class="feedback-item__text">
-            <div class="feedback-text__call">или перезвоните нам сами</div>
-            <div class="feedback-text__phone">+7 (495) 42-251-31</div>
+  <div class="modal modal_hidden" id="modal-callback">
+    <div class="modal__dialog">
+      <div class="modal__close">&#10006;</div>
+      <div class="modal-container">
+        <div class="modal-wrap">
+          <div class="element element1">
+            <div class="modal-wrap__image"><img src="img/modwind/imgmod1.jpg" alt=""></div>
+            <div class="modal-wrap__text">
+              <div class="modal-text__title">Ванная комната</div>
+              <div class="modal-text__img"><img src="img/modwind/yelline.png" alt=""></div>
+              <div class="modal-text__price"><span class="ms300">135*150 -</span> <span class="ms700">31 000 руб.<br></span>
+                <span class="ms300">170*170 -</span> <span class="ms700">43 000 руб.</span>
+              </div>
+            </div>
           </div>
+          <div class="element element2">
+            <div class="modal-wrap__image"><img src="img/modwind/imgmod2.jpg" alt=""></div>
+            <div class="modal-wrap__text">
+              <div class="modal-text__title">Туалет</div>
+              <div class="modal-text__img"><img src="img/modwind/yelline.png" alt=""></div>
+              <div class="modal-text__price"><span class="ms300">135*70 -</span> <span class="ms700">14 000 руб.</span>
+              </div>
+            </div>
+          </div>
+          <div class="element element3">
+            <div class="modal-wrap__image"><img src="img/modwind/imgmod3.jpg" alt=""></div>
+            <div class="modal-wrap__text">
+              <div class="modal-text__title">Совмещенный санузел</div>
+              <div class="modal-text__img"><img src="img/modwind/yelline.png" alt=""></div>
+              <div class="modal-text__price"><span class="ms300">170*210 -</span> <span class="ms700">54 000 руб.</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-descr">
+            <div class="modal-descr__title">
+              В стоимость работ входит
+            </div>
+            <div class="modal-descr__text">
+              <ul>
+                <li><span>Демонтаж старого покрытия стен и пола</span></li>
+                <li><span>Выравнивание стен гипсовым составом</span></li>
+                <li><span>Грунтовка стен и пола антисептиком, бетоноконтакотом</span></li>
+                <li><span>Монтаж кафельной плитки на полу и стенах</span></li>
+                <li><span>Установка реечного или натяжного потолка, светильников</span></li>
+                <li><span>Монтаж двери с коробкой</span></li>
+              </ul>
+            </div>
 
+          </div>
         </div>
+      </div>
+      <div class="modal-form">
+        <h2 class="modal-form__title">Узнайте точную стоимость <br> ремонта по телефону!</h2>
+        <span class="modal-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+        <form action="#">
+          <input type="text" placeholder="Ваше имя" class="input input-name form__input1">
+          <input type="tel" pattern="\+7\s?[(]{0,1}9[0-9]{2}[)]{0,1}\s?\d{2}[-]{0,1}\d{2}[-]{0,1}\d{3}" maxlength="16"
+            placeholder="Ваш телефон" class="input input-tel form__input1">
+          <button type="submit" class="button form__button">Узнать стоимость
+
+          </button>
+          <div class="modal-form__item">
+            <div class="modal-item__text">
+              <div class="modal-text__call">или Вы можете перезвоните нам сами<br> по телефону</div>
+              <div class="modal-text__phone">+7 (495) 42-251-31</div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
 
-  </section>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#button-callback').click(function () {
+        $('.modal').show();
+      });
+      $('.modal__close').click(function () {
+        $('.modal').hide();
+      });
+    });
+  </script>
 
 </body>
 
