@@ -844,6 +844,12 @@ img {
   max-width: 100%;
 }
 
+@media (max-width: 1600px) {
+  .modal__dialog {
+    margin-top: 70px;
+  }
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 970px;
