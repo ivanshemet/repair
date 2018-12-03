@@ -981,6 +981,7 @@ img {
   }
   .modal__dialog {
     margin: auto;
+    margin-top: 30px;
   }
   .modal-wrap {
     margin-right: 15px;
@@ -1027,6 +1028,16 @@ img {
   }
   .hidden-xs {
     display: none;
+  }
+  .modal-dialog {
+    width: 95%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    margin-top: 30px;
   }
   .modal-container {
     width: 100%;
