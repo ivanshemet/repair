@@ -1161,6 +1161,56 @@ li {
   line-height: 50px;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map {
+  width: 55%;
+  min-height: 640px;
+}
+
+.footer-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 39px;
+}
+
+.footer-icon_1 {
+  margin-top: 3px;
+  max-height: 23px;
+  max-width: 20px;
+  margin-right: 33px;
+}
+
+.footer-icon_2 {
+  margin-top: 2px;
+  max-height: 23px;
+  max-width: 20px;
+  margin-right: 27px;
+}
+
+.footer-icon_3 {
+  margin-top: 2px;
+  max-height: 23px;
+  max-width: 20px;
+  margin-right: 27px;
+}
+
+.contacts-title {
+  margin-top: 100px;
+  font-family: 'Museo Sans Bolt', sans-serif;
+  line-height: 33px;
+  margin-bottom: 100px;
+}
+
+.contacts-wrap {
+  margin-left: 134px;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1206,6 +1256,14 @@ img {
     margin-left: 60px;
     margin-right: 60px;
   }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -1245,6 +1303,24 @@ img {
   }
   .dsnone {
     display: none;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contacts-title {
+    font-size: 15px;
+  }
+  .map {
+    width: 55%;
+  }
+  .contacts-wrap {
+    margin-left: 80px;
+    margin-right: 45px;
   }
 }
 
@@ -1337,6 +1413,26 @@ img {
   }
   .instr-title {
     font-size: 20px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .map {
+    width: 55%;
+  }
+  .contacts-title {
+    font-size: 12px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .contacts-wrap {
+    margin-left: 40px;
+    margin-right: 20px;
   }
 }
 
@@ -1432,6 +1528,42 @@ img {
   }
   .instr-title {
     font-size: 17px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-img__wrap {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts-title {
+    text-align: center;
+  }
+  .map {
+    width: 100%;
+    height: 640px;
+  }
+  .contacts-wrap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1529,6 +1661,21 @@ img {
   .section-title_center.section-title {
     margin-bottom: 50px;
     font-size: 23px;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contacts-wrap {
+    margin-bottom: 30px;
+  }
+  .map {
+    width: 100%;
+  }
+  .footer-img {
+    margin-left: 10px;
   }
 }
 
