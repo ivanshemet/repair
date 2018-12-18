@@ -828,14 +828,16 @@ li {
 .portfolio {
   background: url("../img/portfolio/bgimage.png") no-repeat top right 100%;
   background-color: #f5f5f5;
-  padding: 100px 0;
+  padding: 86px 0;
 }
 
-.section-title.section-title_center {
+.section-title.section-title_center-1 {
   margin-bottom: 99px;
   font-size: 30px;
   font-weight: 400;
   line-height: 45px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .slider__item {
@@ -1154,7 +1156,7 @@ li {
   padding-bottom: 99px;
   padding-top: 99px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   background-color: #ffc000;
   font-size: 28px;
   font-weight: 400;
@@ -1209,6 +1211,80 @@ li {
 
 .contacts-wrap {
   margin-left: 134px;
+}
+
+.advantages {
+  padding: 60px 0;
+}
+
+.advantages__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 370px;
+  height: 411px;
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.advantages-item.advantages-item-1 {
+  background-image: url("../img/advantages/1adv.png");
+}
+
+.advantages-item.advantages-item-2 {
+  background-image: url("../img/advantages/2adv.png");
+}
+
+.advantages-item.advantages-item-3 {
+  background-image: url("../img/advantages/3adv.png");
+}
+
+.contract {
+  text-align: center;
+  padding: 33px 0 200px;
+}
+
+.contract__title {
+  margin-bottom: 92px;
+}
+
+.contract__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contract__item {
+  width: 295px;
+  margin-bottom: 25px;
+}
+
+.contract__item-img {
+  width: 270px;
+  height: 360px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 36px;
 }
 
 *, *:after, *:before {
@@ -1433,6 +1509,9 @@ img {
   .contacts-wrap {
     margin-left: 40px;
     margin-right: 20px;
+  }
+  .advantages {
+    padding: 60px 0;
   }
 }
 
