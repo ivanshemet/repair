@@ -464,6 +464,10 @@ template {
 .main-image {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  z-index: 3;
+  position: absolute;
+  float: right;
+  left: 55%;
 }
 
 .main-advantages {
@@ -488,6 +492,7 @@ template {
 }
 
 .main-advantages__img {
+  max-width: 100%;
   min-width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -829,10 +834,11 @@ li {
   background: url("../img/portfolio/bgimage.png") no-repeat top right 100%;
   background-color: #f5f5f5;
   padding: 86px 0;
+  padding-top: 40px;
 }
 
 .section-title.section-title_center-1 {
-  margin-bottom: 99px;
+  margin-bottom: 50px;
   font-size: 30px;
   font-weight: 400;
   line-height: 45px;
@@ -852,7 +858,7 @@ li {
   width: 45px;
   height: 19px;
   position: absolute;
-  bottom: -68px;
+  bottom: -50px;
 }
 
 .arrow:hover {
@@ -1322,7 +1328,7 @@ img {
 
 @media (max-width: 1800px) {
   .modal__dialog {
-    margin-top: 40px;
+    margin-top: 90px;
   }
   .down-questions {
     margin-left: 75px;
@@ -1362,6 +1368,7 @@ img {
   }
   .instr-advantages__item {
     height: 225px;
+    margin-right: 30px;
     width: 214px;
   }
   .instr-wrap {
@@ -1472,6 +1479,25 @@ img {
     margin-right: 100px;
     margin-bottom: 60px;
   }
+  .card {
+    max-width: 370px;
+    min-height: 410px;
+    text-align: center;
+    padding-bottom: 47px;
+    border: 1px solid #e8e8e8;
+    margin: 10px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .card:hover {
+    -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  }
+  .card:hover > .card__img-wrap:after {
+    display: none;
+    opacity: 1;
+  }
   .instr-advantages__item {
     height: 225px;
     width: 185px;
@@ -1517,7 +1543,10 @@ img {
 
 @media (max-width: 768px) {
   .container {
-    width: 95%;
+    width: 100%;
+  }
+  .main-image {
+    position: static;
   }
   .main-wrap {
     -webkit-box-orient: vertical;
@@ -1559,9 +1588,6 @@ img {
   }
   .modal-wrap {
     background-color: #f7f7ff;
-  }
-  .input.input-name.form__input {
-    margin-right: 0px;
   }
   .modal-text__phone {
     margin-bottom: 50px;
@@ -1673,11 +1699,19 @@ img {
   .feedback-item {
     margin-left: 120px;
   }
+  .form-item__contetnt {
+    width: 100%;
+    text-align: center;
+  }
   .form {
     margin: auto;
   }
   .input.input-name.form__input {
     margin-right: 0px;
+    width: 100%;
+  }
+  .input.input-tel.form__input {
+    width: 100%;
   }
   .modal__dialog {
     margin: auto;
@@ -1776,6 +1810,10 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .form {
+    margin: auto;
+    width: 91%;
   }
   .feedback-item {
     margin-right: auto;
