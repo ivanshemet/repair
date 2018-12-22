@@ -388,6 +388,7 @@ template {
   padding: 25px;
   border-radius: 10px;
   border: 1px solid #dddddd;
+  outline: none;
 }
 
 .header-wrap {
@@ -616,6 +617,8 @@ template {
   font-weight: 400;
   line-height: 24px;
   font-family: 'Museo Sans Bolt', sans-serif;
+  text-decoration: none;
+  color: #333333;
 }
 
 .modal {
@@ -761,6 +764,8 @@ li span {
 
 .ms700 {
   font-family: 'Museo Sans Bolt';
+  text-decoration: none;
+  color: #333333;
 }
 
 .modal-descr__title {
@@ -828,6 +833,8 @@ li {
   font-weight: 400;
   line-height: 24px;
   font-family: 'Museo Sans Bolt', sans-serif;
+  text-decoration: none;
+  color: #333333;
 }
 
 .portfolio {
@@ -1326,6 +1333,12 @@ img {
   text-align: center;
 }
 
+@media (max-width: 2500px) {
+  .modal__dialog {
+    margin-top: 90px;
+  }
+}
+
 @media (max-width: 1800px) {
   .modal__dialog {
     margin-top: 90px;
@@ -1716,12 +1729,14 @@ img {
   .modal__dialog {
     margin: auto;
     margin-top: 30px;
+    height: 100%;
   }
   .modal-wrap {
     margin-right: 15px;
   }
   .modal-form {
     padding-top: 60px;
+    margin-top: 400px;
   }
   .down-questions {
     padding-bottom: 40px;
@@ -1881,7 +1896,7 @@ img {
   }
   .modal-form {
     padding-top: 20px;
-    margin: 10px 15px;
+    margin-top: 400px;
   }
   .modal-wrap__text {
     font-size: 10px;
