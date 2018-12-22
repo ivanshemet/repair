@@ -1731,6 +1731,9 @@ img {
     margin-top: 30px;
     height: 100%;
   }
+  .modal-container {
+    margin-top: 370px;
+  }
   .modal-wrap {
     margin-right: 15px;
   }
@@ -1868,6 +1871,7 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
+    margin-top: 370px;
   }
   .modal-wrap {
     width: 100%;
@@ -1917,6 +1921,7 @@ img {
   }
   .modal-text__call {
     margin-bottom: 10px;
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
